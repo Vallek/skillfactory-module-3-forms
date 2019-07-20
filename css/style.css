@@ -1,31 +1,42 @@
+/* В этой версии верстки все правила font-face изменены, чтобы соответствоать тому, как шрифты указаны в Google Fonts. То есть одно название, разный вес и стиль. Если что-то случится с локальными шрифтами, сработают удаленные. */
 @font-face {
-	src: url('../fonts/OpenSans-Regular.ttf');
-	font-family: 'OpenSans Regular';
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-	src: url('../fonts/OpenSans-Italic.ttf');
-	font-family: 'OpenSans Italic';
+	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: italic;
 }
 
 @font-face {
-	src: url('../fonts/OpenSans-Bold.ttf');
-	font-family: 'OpenSans Bold';
+	src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-style: normal;
 }
 
 @font-face {
-	src: url('../fonts/OpenSans-SemiBold.ttf');
-	font-family: 'OpenSans SemiBold';
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-	src: url('../fonts/OpenSans-ExtraBold.ttf');
-	font-family: 'OpenSans ExtraBold';
+	src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-style: normal;
 }
 
 body {
 	margin: 0;
-	font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /* Main Blocks */
@@ -55,7 +66,8 @@ h2 {
 	color: #585858;
 	/* Хотя в макете цвет текста заголовков и других элементов достигается прозрачностью, в браузере такое значение даст другой результат. Другой вариант: взять цвет в фотошопе пипеткой. */
 	margin: 0;
-	font-family: 'OpenSans Bold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
 	font-size: 42px;
 	line-height: 55px;
 	text-transform: uppercase;
@@ -67,7 +79,7 @@ h3 {
 
 p {
 	margin: 0;
-	font-family: 'OpenSans Regular';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 28px;
 }
@@ -151,7 +163,8 @@ header {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 18px;
-	font-family: 'OpenSans ExtraBold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 800;
 	letter-spacing: 1.5px;
 	/* Свойство letter-spacing позволяет изменить межбуквенное расстояние. */
 }
@@ -173,7 +186,8 @@ header {
 	box-sizing: border-box;
 	color: #ffffff;
 	font-size: 18px;
-	font-family: 'OpenSans Bold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 700;
 	display: inline-block;
 	background-color: #ff3f40;
 	width: 227px;
@@ -246,7 +260,8 @@ header {
 
 .service > h3 {
 	letter-spacing: 1.5px;
-	font-family: 'OpenSans SemiBold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
 	font-size: 22px;
 	margin-bottom: 10px;
 }
@@ -318,7 +333,8 @@ header {
 	color: #000;
 	margin-right: 55px;
 	font-size: 22px;
-	font-family: 'OpenSans SemiBold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
 	opacity: 0.7;
@@ -401,7 +417,8 @@ header {
 	position: relative;
     bottom: 5px;
 	font-size: 30px;
-	font-family: 'OpenSans SemiBold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
 	text-transform: uppercase;
 	opacity: 0.8;
 	margin-bottom: 16px;
@@ -410,7 +427,8 @@ header {
 .member-social-links > a {
 	color: #000;
 	font-size: 18px;
-	font-family: 'OpenSans Italic';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-style: italic;
 	text-decoration: none;
 	margin-right: 30px;
 } 
@@ -509,7 +527,8 @@ header {
 .subscribe-form button[type="submit"] {
 	color: #fff;
 	font-size: 18px;
-	font-family: 'OpenSans Bold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 700;
 	width: 214px;
 	min-height: 79px;
 	background-color: #ff2d2d;
@@ -577,7 +596,7 @@ header {
 .feedback-form > textarea[name="message"] {
 	resize: none;
 	font-size: 16px;
-	font-family: 'OpenSans Regular';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	width: 731px;
 	max-width: 731px;
 	height: 249px;
@@ -597,7 +616,8 @@ header {
 	height: 72px;
 	color: #fff;
 	font-size: 18px;
-	font-family: 'OpenSans Bold';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 700;
 	background-color: #ff2d2d;
 	border: none;
 	border-radius: 5px;
