@@ -172,7 +172,8 @@ header {
 	letter-spacing: 6px;
 	word-break: break-word;
 	hyphens: auto;
-	/* Свойство word-break заставляет слова переноситься по буквам, если они не помещаются в родительский элемент.*/
+	/* Свойство word-break заставляет слова переноситься по буквам, если они не помещаются в родительский элемент.
+	Свойство hyphens добавляет дефис в месте переноса (на момент написания работает не во всех браузерах) */
 }
 
 .intro-text {
@@ -754,6 +755,9 @@ footer {
 	.services {
 		justify-content: center;
 	}
+}
+
+@media screen and (max-width: 907px) {
 	.services-lead-wrapper,
 	.services-wrapper {
 		width: 100%;
