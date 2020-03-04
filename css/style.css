@@ -755,7 +755,8 @@ footer {
 	.feedback-contacts-wrapper {
 		flex-wrap: wrap;
 		padding-left: initial;
-    	padding-right: initial;
+		padding-right: initial;
+		padding-bottom: 0;
 	}
 	.left-box {
 		flex: 0 1 auto;
