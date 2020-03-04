@@ -515,7 +515,6 @@ header {
 .subscribe-form input[type="email"] {
 	box-sizing: border-box;
 	flex: 0 1 521px;
-	max-width: 521px;
 	min-height: 79px;
 	padding: 0;
 	padding-left: 35px;
