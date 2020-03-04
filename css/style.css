@@ -676,7 +676,6 @@ header {
 }
 
 /* Ниже идут два предыдущих варианта создания этой декоративной части */
-
 .contacts-background {
 	position: absolute;
 	z-index: -1;
