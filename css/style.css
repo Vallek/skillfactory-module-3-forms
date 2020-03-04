@@ -121,12 +121,14 @@ header {
 
 .site-menu li {
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	min-height: 89px;
 }
 
 .site-menu a {
+	display: flex;
+	align-items: center;
 	padding: 0 30px;
 	color: #e0e0e0;
 	font-size: 14px;
