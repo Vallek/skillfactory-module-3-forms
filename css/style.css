@@ -113,6 +113,10 @@ header {
 	background-color: #000000;
 }
 
+.header-out-wrapper {
+	padding-top: 29px;
+}
+
 .site-menu {
 	display: flex;
 	flex-wrap: wrap;
