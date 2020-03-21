@@ -758,9 +758,7 @@ footer {
 		justify-content: flex-start;
 	}
 	.product {
-		width: 299px;
 		max-width: 100%;
-		/* height: auto; */
 		margin-right: 1vw;
 	}
 	.feedback-contacts-wrapper {
