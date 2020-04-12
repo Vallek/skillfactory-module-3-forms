@@ -471,6 +471,9 @@ header {
 }
 
 .member > h3 {
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	visibility: hidden;
 	color: #ffffff;
 	position: absolute;
