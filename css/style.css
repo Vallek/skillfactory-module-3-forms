@@ -403,25 +403,21 @@ header {
 }
 
 .team-members-wrapper {
+	position: relative;
 	width: 100%;
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
-	position: relative;
-}
-
-.main-member-photo {
-	width: 321px;
-	height: 458px;
-	margin-right: 65px;
-	background-color: #eb6d4a8f;
+	min-height: 458px;
+    align-content: space-between;
 }
 
 .main-member-info {
-	position: absolute;
+	position: relative;
+    display: flex;
+    flex-direction: column;
 	max-width: 642px;
-	top: 5px;
-	left: 393px;
+	margin-left: calc(321px + 65px);
 }
 
 .main-member-info > h3 {
@@ -433,6 +429,15 @@ header {
 	text-transform: uppercase;
 	opacity: 0.8;
 	margin-bottom: 16px;
+}
+
+.main-member-photo {
+	position: absolute;
+	transform: translateX(calc(-100% - 65px));
+	width: 321px;
+	height: 458px;
+	margin-right: 65px;
+	background-color: #eb6d4a8f;
 }
 
 .member-social-links > a {
@@ -456,6 +461,7 @@ header {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-left: calc(321px + 65px);
 }
 
 .member {
@@ -804,6 +810,22 @@ footer {
 		max-width: 100%;
 	}
 }
+
+@media screen and (max-width: 855px) {
+	.main-member-info {
+		margin-left: 0;
+		margin-bottom: 1.5rem;
+	}
+	.main-member-photo {
+		position: initial;
+		margin-right: 0;
+		transform: initial;
+		margin-bottom: 1rem;
+	}
+	.members-wrapper {
+		margin-left: 0;
+	}
+} 
 
 @media screen and (max-width: 800px) {
 	.services-lead-wrapper {
