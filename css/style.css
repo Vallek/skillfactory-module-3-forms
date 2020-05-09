@@ -85,7 +85,7 @@ p {
 	margin: 0;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 16px;
-	line-height: 28px;
+	line-height: 1.75;
 }
 
 .page__header_grey {
@@ -685,7 +685,7 @@ p {
 }
 
 .contacts-address {
-	line-height: 28px;
+	line-height: 1.75;
 }
 
 .contacts__line {
