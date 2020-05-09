@@ -356,7 +356,7 @@ p {
 	opacity: 1;
 }
 
-.products__link_active:hover {
+.products__link:hover {
 	color: #ff2d2d;
 }
 
