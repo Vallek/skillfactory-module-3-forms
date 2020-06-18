@@ -646,9 +646,7 @@ p {
 	max-width: 731px;
 	height: 249px;
 	box-sizing: border-box;
-	padding-top: 35px;
-	padding-left: 54px;
-	padding-bottom: 150px;
+	padding: 35px 54px;
 	margin-bottom: 45px;
 	border: none;
 	border-radius: 5px;
