@@ -586,7 +586,6 @@ p {
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: nowrap;
-	/* padding-top: 92px; */
 	padding-bottom: 110px;
 	width: 100%;
     max-width: 100%;
@@ -624,7 +623,6 @@ p {
 .feedback__input[name="email"] {
 	font-size: 16px;
 	width: 339px;
-	max-width: 339px;
 	height: 69px;
 }
 
@@ -637,7 +635,6 @@ p {
 	font-size: 16px;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	width: 731px;
-	max-width: 731px;
 	height: 249px;
 	box-sizing: border-box;
 	padding: 35px 54px;
@@ -649,7 +646,6 @@ p {
 
 .feedback__button[type="submit"] {
 	width: 731px;
-	max-width: 731px;
 	height: 72px;
 	color: #fff;
 	font-size: 18px;
