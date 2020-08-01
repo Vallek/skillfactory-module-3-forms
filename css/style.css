@@ -538,6 +538,7 @@ p {
 	min-height: 79px;
 	padding: 0;
 	padding-left: 35px;
+	padding-right: 35px;
 	border: none;
 	border-radius: 5px;
 	margin-right: 22px;
@@ -612,6 +613,7 @@ p {
 .feedback__input {
 	box-sizing: border-box;
 	padding-left: 54px;
+	padding-right: 54px;
 	border: none;
 	border-radius: 5px;
 	background-color: #f3f3f3;	
