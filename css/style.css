@@ -595,10 +595,12 @@ p {
 .feedback__body {
 	position: relative;
 	display: flex;
+	justify-content: space-between;
 	align-items: flex-end;
 	flex-wrap: nowrap;
 	width: 100%;
-    max-width: 100%;
+    max-width: 731px;
+	margin-right: 107px;
     align-items: stretch;
     padding-left: 0;
     padding-right: 0;
@@ -608,14 +610,10 @@ p {
 	flex: 1 1 auto;
 }
 
-.feedback__feedback {
-	max-width: 731px;
-	margin-right: 107px;
-}
-
 .feedback__form {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .feedback__input {
@@ -639,15 +637,12 @@ p {
 	background-color: #f3f3f3;
 }
 
-.feedback__name {
-	margin-right: 53px;
-}
-
 .feedback__message {
 	resize: none;
 	font-size: 16px;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	width: 731px;
+	width: 100%;
+	max-width: 731px;
 	height: 252px;
 	box-sizing: border-box;
 	padding: 35px 54px;
@@ -661,7 +656,8 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 731px;
+	width: 100%;
+	max-width: 731px;
 	height: 72px;
 	color: #fff;
 	font-size: 18px;
@@ -781,6 +777,9 @@ p {
 	.product {
 		max-width: 100%;
 		margin-right: 1vw;
+	}
+	.feedback__body {
+		margin-right: 0;
 	}
 	.feedback-contacts {
 		flex-wrap: wrap;
