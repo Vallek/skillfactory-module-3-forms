@@ -50,7 +50,7 @@
 .feature,
 .team,
 .subscribe,
-.get-in-touch__body,
+.feedback__body,
 .footer__content {
 	display: flex;
 	flex-wrap: wrap;
@@ -229,7 +229,7 @@ p {
 
 .services__lead {
 	flex: 1 1 502px;
-	/* Свойство flex совмещает в себе три свойства grow, shrink и basis. Первые два позволяют сказать, что флекс элемент может расширятсья и сжиматься. Третье задает базовую ширину, которая расчитывается до всего остального */
+	/* Свойство flex совмещает в себе три свойства grow, shrink и basis. Первые два позволяют сказать, что флекс элемент может расширятсья и сжиматься. Третье задает базовую ширину, которая расчитывается до всего остального. */
 	max-width: 502px;
 	margin-bottom: 50px;
 	margin-right: 50px;
@@ -532,7 +532,10 @@ p {
 	justify-content: center;
 }
 
-.subscribe__form .subscribe__input[type="email"] {
+.subscribe__form .subscribe__input {
+	color: #8e8e8e;
+	display: flex;
+	align-items: center;
 	box-sizing: border-box;
 	flex: 0 1 521px;
 	min-height: 79px;
@@ -542,9 +545,13 @@ p {
 	border: none;
 	border-radius: 5px;
 	margin-right: 22px;
+	background-color: #fff;
 }
 
-.subscribe__form .subscribe__button[type="submit"] {
+.subscribe__form .subscribe__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: #fff;
 	font-size: 18px;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -557,37 +564,39 @@ p {
 	text-transform: uppercase;
 }
 
-.get-in-touch__header {
-	box-sizing: border-box;
-	max-width: 1249px;
-	margin: 0 auto;
-	padding-left: 1vw;
-	padding-right: 1vw;
-	width: 100%;
+/* Feedback contacts */
+.feedback-contacts {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 	padding-top: 92px;
+	padding-bottom: 110px;
 }
 
-.get-in-touch__heading {
+/* Feedback */
+.feedback__header {
+	box-sizing: border-box;
+}
+
+.feedback__heading {
 	margin-bottom: 34px;
 }
 
-.get-in-touch__text {
+.feedback__text {
 	max-width: 720px;
 	margin-bottom: 50px;
 }
 
-.get-in-touch__line {
+.feedback__line {
 	margin-left: 0;
 	margin-bottom: 75px;
 }
 
-/* Feedback */
-.get-in-touch__body {
+.feedback__body {
 	position: relative;
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: nowrap;
-	padding-bottom: 110px;
 	width: 100%;
     max-width: 100%;
     align-items: stretch;
@@ -595,14 +604,13 @@ p {
     padding-right: 0;
 }
 
-.get-in-touch__left-box {
+.feedback__left-box {
 	flex: 1 1 auto;
 }
 
-.get-in-touch__feedback {
+.feedback__feedback {
 	max-width: 731px;
 	margin-right: 107px;
-	padding-left: 40px;
 }
 
 .feedback__form {
@@ -611,6 +619,7 @@ p {
 }
 
 .feedback__input {
+	color: #8e8e8e;
 	box-sizing: border-box;
 	padding-left: 54px;
 	padding-right: 54px;
@@ -620,24 +629,26 @@ p {
 	margin-bottom: 45px;
 }
 
-/* Для инпутов можно было бы задать свои классы и использовать их, но здесь я хотел показать селектор атрибута и где он может быть использован. */
-.feedback__input[name="name"],
-.feedback__input[name="email"] {
+.feedback__name,
+.feedback__mail {
+	display: flex;
+	align-items: center;
 	font-size: 16px;
 	width: 339px;
 	height: 69px;
+	background-color: #f3f3f3;
 }
 
-.feedback__input[name="name"] {
+.feedback__name {
 	margin-right: 53px;
 }
 
-.feedback__input[name="message"] {
+.feedback__message {
 	resize: none;
 	font-size: 16px;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	width: 731px;
-	height: 249px;
+	height: 252px;
 	box-sizing: border-box;
 	padding: 35px 54px;
 	margin-bottom: 45px;
@@ -646,7 +657,10 @@ p {
 	background-color: #f3f3f3;	
 }
 
-.feedback__button[type="submit"] {
+.feedback__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 731px;
 	height: 72px;
 	color: #fff;
@@ -660,12 +674,15 @@ p {
 } 
 
 /* Contacts */
-.get-in-touch__contacts {
+.contacts {
+	box-sizing: border-box;
 	position: relative;
 	color: #e0e0e0;
 	background-color: #2c2c2c;
-	padding: 125px 78px;
-	max-width: 290px;
+	box-sizing: border-box;
+	padding: 125px 53px 125px 78px;
+	min-height: 481px;
+	max-width: 411px;
 }
 
 .contacts__heading {
@@ -682,7 +699,8 @@ p {
 	margin-bottom: 17px;
 }
 
-.get-in-touch__right-box {
+.feedback__right-box {
+	min-height: 481px;
 	flex: 1 1 auto;
 }
 
@@ -690,7 +708,7 @@ p {
 	background-color: #2c2c2c;
 }
 
-/* Ниже идут два предыдущих варианта создания этой декоративной части */
+/* Ниже идут два других варианта создания этой декоративной части */
 .contacts-background {
 	position: absolute;
 	z-index: -1;
@@ -764,13 +782,13 @@ p {
 		max-width: 100%;
 		margin-right: 1vw;
 	}
-	.get-in-touch__body {
+	.feedback-contacts {
 		flex-wrap: wrap;
 		padding-left: initial;
 		padding-right: initial;
 		padding-bottom: 0;
 	}
-	.get-in-touch__left-box {
+	.feedback__left-box {
 		flex: 0 1 auto;
 	}
 	.feedback {
@@ -839,14 +857,13 @@ p {
 }
 
 @media screen and (max-width: 760px) {
-	.feedback__input[name="name"],
-	.feedback__input[name="email"],
-	.feedback__input[name="message"],
-	.feedback__button[type="submit"] {
+	.feedback__name,
+	.feedback__mail,
+	.feedback__message,
+	.feedback__button {
 		width: 100%;
-		max-width: 100%;
 	}
-	.feedback__input[name="name"] {
+	.feedback__name {
 		margin-right: 0;
 	}
 }

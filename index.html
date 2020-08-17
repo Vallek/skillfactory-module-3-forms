@@ -149,35 +149,36 @@
 				<button class="subscribe__button" type="submit">Subscribe</button>
 			</form>
 		</section>
-		<section class="get-in-touch">
-			<div class="get-in-touch__header">
-				<h2 class="get-in-touch__heading" id="contacts">Get in touch</h2>
-				<p class="get-in-touch__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-				<hr class="header__line get-in-touch__line">
-			</div>
-			<!-- Декоративная часть у контактов сверстана с помощью двух дивов. Левый невидимый и правый с темным фоном. Можно также сделать такое без лишней разметки с помощью гридов. -->
-			<div class="get-in-touch__body">
-				<div class="get-in-touch__left-box"></div>	
-				<section class="get-in-touch__feedback feedback">
-					<form class="feedback__form" action="" method="GET">
-						<input class="feedback__input" type="text" name="name" placeholder="Name" required>
-						<input class="feedback__input" type="email" name="email" placeholder="Your Mail" required>
-						<textarea class="feedback__input" name="message" cols="30" rows="5" placeholder="Type your message" required></textarea>
-						<button class="feedback__button" type="submit">Send message</button>
-					</form>
-				</section>
-				<section class="get-in-touch__contacts contacts">
-					<h2 class="contacts__heading">Contact info</h2>
-					<address class="contacts__address">
-						<p class="contacts__line">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh<br></p>
-						<p class="contacts__line">redwan@deviserweb.com<br></p>
-						<p class="contacts__line">(+88) 017 617 46373<br></p>
-					</address>
-				</section>
-				<div class="get-in-touch__right-box contacts__decor"></div>
-				<!-- <div class="contacts-background"></div> -->
-			</div>
-		</section>
+		<div class="feedback-contacts">
+			<div class="feedback__left-box"></div>	
+			<section class="feedback">
+				<div class="feedback__header">
+					<h2 class="feedback__heading" id="contacts">Get in touch</h2>
+					<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+					<hr class="header__line feedback__line">
+				</div>
+				<div class="feedback__body">
+					<section class="feedback__feedback feedback">
+						<form class="feedback__form" action="" method="GET">
+							<input class="feedback__input feedback__name" type="text" name="name" placeholder="Name" required>
+							<input class="feedback__input feedback__mail" type="email" name="email" placeholder="Your Mail" required>
+							<textarea class="feedback__input feedback__message" name="message" cols="30" rows="5" placeholder="Type your message" required></textarea>
+							<button class="feedback__button" type="submit">Send message</button>
+						</form>
+					</section>
+				</div>
+			</section>
+			<section class="contacts">
+				<h2 class="contacts__heading">Contact info</h2>
+				<address class="contacts__address">
+					<p class="contacts__line">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh<br></p>
+					<p class="contacts__line">redwan@deviserweb.com<br></p>
+					<p class="contacts__line">(+88) 017 617 46373<br></p>
+				</address>
+			</section>
+			<div class="feedback__right-box contacts__decor"></div>
+			<!-- <div class="contacts-background"></div> -->
+		</div>
 	</main>
 	<footer class="footer">
 		<div class="footer__content">
