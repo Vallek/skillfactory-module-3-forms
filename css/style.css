@@ -571,9 +571,27 @@ p {
 	align-items: flex-end;
 	padding-top: 92px;
 	padding-bottom: 110px;
+	/* overflow: hidden; */
+	/* display: grid; */
+	/* grid-template-columns: 1fr 731px 107px 411px 1fr; */
+	/* grid-template-rows: repeat(2, auto); */
+}
+
+.feedback-contacts::after {
+	/* content: ''; */
+	height: 100%;
+	background-color: #2c2c2c;
+	/* grid-column: 5 / 6; */
+	/* grid-row: 2 / 3; */
 }
 
 /* Feedback */
+.feedback {
+	/* column-gap: 107px; */
+	/* grid-column: 2 / 3; */
+	/* grid-row: 1 / 3; */
+}
+
 .feedback__header {
 	box-sizing: border-box;
 }
@@ -596,12 +614,10 @@ p {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
 	flex-wrap: nowrap;
 	width: 100%;
-    max-width: 731px;
+	max-width: 731px;
 	margin-right: 107px;
-    align-items: stretch;
     padding-left: 0;
     padding-right: 0;
 }
@@ -679,6 +695,8 @@ p {
 	padding: 125px 53px 125px 78px;
 	min-height: 481px;
 	max-width: 411px;
+	/* grid-column: 4 / 5; */
+	/* grid-row: 2 / 3; */
 }
 
 .contacts__heading {
@@ -704,17 +722,7 @@ p {
 	background-color: #2c2c2c;
 }
 
-/* Ниже идут два других варианта создания этой декоративной части */
-.contacts-background {
-	position: absolute;
-	z-index: -1;
-	width: 100vw;
-	height: 481px;
-	background-color: #2c2c2c;
-	clip-path: polygon(1000px 0, 100% 0, 100% 100%, 1000px 100%);
-	/* Свойство clip-path позволяет наложить на элемент маску, которая может визуально скрыть части этого элемента. Макса может быть самой разной формы, в данном случае это прямоугольник. */
-}
-
+/* Другой способ сделать темную подложку - создать пустой псевдоэлемент, стилизовать его и тоже исопльзовать позиционирование. Этот подход лучше тем, что вам не нужно изменять HTML. Но для его работы необходимо поставить overflow: hidden для родителя, что не очень хорошая практика.*/
 .contacts::after {
 	/* content: ''; */
 	display: block;
@@ -727,7 +735,6 @@ p {
 	height: 100%;
 	background-color: #2c2c2c;
 }
-/* Второй способ сделать темную подложку - создать пустой псевдоэлемент, стилизовать его и тоже исопльзовать позиционирование. Этот подход лучше тем, что вам не нужно изменять HTML. Сейчас работает этот способ, поэтому элемент в HTML отключен. */
 
 /* Footer */
 .footer {
