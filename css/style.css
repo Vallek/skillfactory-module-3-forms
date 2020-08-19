@@ -785,6 +785,13 @@ p {
 		max-width: 100%;
 		margin-right: 1vw;
 	}
+	.feedback {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		padding: 0 1vw;
+		grid-column: 1 / 6;
+		grid-row: 1 / 2;
+	}
 	.feedback__body {
 		margin-right: 0;
 	}
@@ -793,21 +800,22 @@ p {
 		padding-left: initial;
 		padding-right: initial;
 		padding-bottom: 0;
+		grid-template-columns: 100%;
 	}
 	.feedback__left-box {
 		flex: 0 1 auto;
 	}
-	.feedback {
-		margin: 0 auto;
-		margin-bottom: 30px;
-		padding: 0 1vw;
-	}
 	.contacts {
 		width: 100%;
 		max-width: 100%;
+		grid-column: 1 / 6;
+		grid-row: 2 / 3;
 	}
 	.contacts-background {
 		display: none;
+	}
+	.feedback-contacts::after {
+		content: initial;
 	}
 }
 
