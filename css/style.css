@@ -486,6 +486,9 @@ p {
 .member {
 	position: relative;
 	margin-top: 18px;
+}
+
+.member:not(:last-child) {
 	margin-right: 18px;
 }
 
