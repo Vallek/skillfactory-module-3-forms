@@ -429,6 +429,7 @@ p {
 	justify-content: space-between;
 }
 
+/* Для проверки поддержки браузерами свойств и значений можно использовать правило @supports. Код внутри будет работать только, если есть поддержка условия. */
 @supports (display: grid) and (display: contents) {
 	.team__main-content {
 		display: contents;
