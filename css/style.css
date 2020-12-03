@@ -109,6 +109,7 @@ p {
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
+	width: 100%;
 	max-width: 1249px;
 	margin: 0 auto;
 	min-height: 89px;
