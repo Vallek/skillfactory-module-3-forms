@@ -775,6 +775,10 @@ p {
 	background-color: #2c2c2c;
 }
 
+.footer__link {
+	display: inline-block;
+}
+
 .footer__social-links > .footer__link:not(:last-child) {
 	margin-right: 18px;
 }
