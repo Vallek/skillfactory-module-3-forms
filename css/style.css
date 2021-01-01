@@ -557,7 +557,7 @@ p {
 	justify-content: center;
 }
 
-.subscribe__form .subscribe__input {
+.subscribe__input {
 	color: #8e8e8e;
 	display: flex;
 	align-items: center;
@@ -573,7 +573,7 @@ p {
 	background-color: #fff;
 }
 
-.subscribe__form .subscribe__button {
+.subscribe__button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
