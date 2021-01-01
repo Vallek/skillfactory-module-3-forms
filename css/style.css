@@ -44,14 +44,7 @@
 }
 
 /* Main Sections */
-/* По БЭМу да и вообще не рекомендуется так объединять селекторы. В данном случае я уверен, что ничего не поменяется. Но в реальности так не бывает:) */
-.intro,
-.services,
-.feature,
-.team,
-.subscribe,
-.feedback__body,
-.footer__content {
+.section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
