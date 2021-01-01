@@ -402,9 +402,6 @@ p {
 	flex-wrap: wrap;
 	align-items: stretch;
 	min-height: 458px;
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	grid-template-rows: repeat(2, auto);
 }
 
 .team__selected-photo {
@@ -426,6 +423,11 @@ p {
 
 /* Для проверки поддержки браузерами свойств и значений можно использовать правило @supports. Код внутри будет работать только, если есть поддержка условия. */
 @supports (display: grid) and (display: contents) {
+	.team__members {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		grid-template-rows: repeat(2, auto);
+	}
 	.team__main-content {
 		display: contents;
 	}
