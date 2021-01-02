@@ -553,7 +553,7 @@
 .subscribe__form {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: baseline;
 	justify-content: center;
 }
 
@@ -570,6 +570,7 @@
 	border: none;
 	border-radius: 5px;
 	margin-right: 22px;
+	margin-bottom: 15px;
 	background-color: #fff;
 }
 
